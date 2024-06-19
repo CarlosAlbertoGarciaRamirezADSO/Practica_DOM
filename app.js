@@ -53,12 +53,107 @@ let id = dom.getElementById("api")
 let palabra = id.textContent.toUpperCase()
 id.innerHTML = palabra
 console.log("por mayuscula", palabra);
-console.clear();
 
 console.log(body.childNodes);
+console.clear();
 
 // const listaA = [...body.children]
 
 // listaA.map((x) => {
 //   console.log(x);
 // })
+
+
+
+
+//ejercicios
+
+
+const padres = dom.getElementById("cards");
+
+console.log(padres.children);
+
+// let arreglo = Array.from(padres.children)
+
+// arreglo.forEach(element => {
+//   if (element.length % 2 !== 0) {
+//     console.log(element)
+//     element.classList.toggle('bg-white')
+//   }
+// });
+
+
+
+
+// let arreglo = [...padres.children]
+
+// arreglo.map((a, i) => {
+//   if (i % 2 != 0) {
+//     // console.log(i);
+//     a.classList.toggle('bg-white')
+//     // console.log(a);
+
+//     let padron = [...a.children]
+//     padron.map((e, i) => {
+//       // console.log(e);
+//       // console.log(i);
+
+//       let padrone = [...e.children]
+//       padrone.map((q, r) => {
+//         console.log(q);
+//         q.classList.toggle('color-black')
+//         // console.log(i);
+
+//         // let paragraf = [...q.children]
+//         // paragraf.map((b, n) => {
+//         //   console.log(b)
+//         // })
+//       })
+
+
+//     })
+//   }
+  
+// })
+
+
+//CAMBIAR ATRIBUTOS Y AGREGAR ATRIBUTOS
+
+let formulario = dom.getElementById('search')
+
+formulario.setAttribute('enctype', 'multipart/form-data')
+formulario.setAttribute('autocomplete', 'on')
+
+
+let input = dom.querySelector('.input')
+input.removeAttribute('placeholder')
+// input.setAttribute('placeholder','cargar')
+
+
+
+// custom propertis
+
+//COLORES
+
+// const html = dom.documentElement;
+// // console.log(html);
+
+// const mineshaft = getComputedStyle(html).getPropertyValue('--MineShaft')
+// const white = getComputedStyle(html).getPropertyValue('--white')
+
+// html.style.setProperty('--MineShaft','#fff')
+// html.style.setProperty('white','#000')
+
+// console.log(mineshaft);
+// console.log(white);
+
+
+
+
+//AGREGAR TEXTO Y AGREGAR ETIQUETAS
+
+
+const parrafo = dom.querySelector('#elemento')
+console.log(parrafo);
+// parrafo.textContent = `hola soy <b>carlos</b> `;
+parrafo.innerHTML = `hola soy <b>carlos</b> `;

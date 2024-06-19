@@ -25,6 +25,14 @@ body{
   line-height: 24px;
 }
 
+.bg-white{
+  background-color: var(--white);
+  color: var(--MineShaft);
+}
+.color-black{
+  color: var(--MineShaft);
+}
+
 ::selection{
   background-color: var(--Starship);
   color: var(--MineShaft);
