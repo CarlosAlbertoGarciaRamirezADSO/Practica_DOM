@@ -1,0 +1,17 @@
+.error{
+  border: solid 3px red;
+  outline: none;
+  padding: 20px;
+
+}
+
+.bien{
+  border: solid 3px green;
+  outline: none;
+  padding: 20px;
+}
+.exelente{
+  outline: none;
+  padding: 20px;
+
+}
